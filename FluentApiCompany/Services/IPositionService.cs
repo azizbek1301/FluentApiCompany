@@ -8,7 +8,7 @@ namespace FluentApiCompany.Services
         public ValueTask<bool> CreatePositionAsync(PositionDto positionDto);
         public ValueTask<List<Position>> GetAllAsync();
         public ValueTask<Position> GetByIdAsync(int id);
-        public ValueTask<bool> DeleteAsync(int id);
-        public ValueTask<bool> UpdatePositionAsync(int id, PositionDto positionDto);
+        public ValueTask<string> DeleteAsync(int id);
+        public ValueTask<string> UpdatePositionAsync(int id, PositionDto positionDto);
     }
 }
